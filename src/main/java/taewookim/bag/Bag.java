@@ -16,6 +16,7 @@ public final class Bag extends JavaPlugin {
     @Override
     public void onEnable() {
         Bukkit.getPluginCommand("bag").setExecutor(new Command());
+        Bukkit.getPluginManager().registerEvents(new Events(), this);
         InventoryNamed = new NamespacedKey(this, "Inventory");
     }
 
