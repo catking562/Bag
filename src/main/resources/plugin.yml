@@ -1,0 +1,13 @@
+name: Bag
+version: '${project.version}'
+main: taewookim.bag.Bag
+api-version: '1.20'
+
+commands:
+  bag:
+    permission: bag.admin
+    aliases: ["가방"]
+
+permissions:
+  bag.admin:
+    default: op
